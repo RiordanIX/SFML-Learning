@@ -4,7 +4,7 @@ Game::Game()
 : PlayerSpeed(150.f)
 , m_Window(sf::VideoMode(640, 480), "SFML Application")
 , m_TimePerFrame(sf::seconds(1.f/60.f))
-, m_PlayerPlane(Aircraft::Airplane,)
+, m_PlayerPlane(Aircraft::Airplane, textures)
 , textures(Textures::Airplane, "Plane.png")
 {
 	m_PlayerPlane.setPosition(0.f,0.f);

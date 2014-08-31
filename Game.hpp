@@ -24,11 +24,11 @@ public:
 
 private:
 	sf::RenderWindow m_Window;
+	sf::Time m_TimePerFrame;
 	TextureHolder textures;
 	Aircraft m_PlayerPlane;
 	bool m_IsMovingUp, m_IsMovingDown,
 		 m_IsMovingLeft, m_IsMovingRight = false;
-	sf::Time m_TimePerFrame;
 };
 
 #endif // GAME_HPP

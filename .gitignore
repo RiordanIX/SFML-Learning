@@ -59,3 +59,8 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
+
+# CodeBlocks project, depend and layout files
+*.cbp
+*.depend
+*.layout

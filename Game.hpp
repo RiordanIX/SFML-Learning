@@ -28,7 +28,8 @@ private:
 	TextureHolder textures;
 	Aircraft m_PlayerPlane;
 	bool m_IsMovingUp, m_IsMovingDown,
-		 m_IsMovingLeft, m_IsMovingRight = false;
+		 m_IsMovingLeft, m_IsMovingRight,
+		 m_IsRotatingLeft, m_IsRotatingRight = false;
 };
 
 #endif // GAME_HPP

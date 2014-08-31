@@ -67,6 +67,10 @@ void Game::update(sf::Time deltaTime)
 		movement.x -= PlayerSpeed;
 	if (m_IsMovingRight)
 		movement.x += PlayerSpeed;
+	if (m_IsRotatingLeft)
+		m_PlayerPlane.rotate(-2.f);
+	if (m_IsRotatingRight)
+		m_PlayerPlane.rotate(2.f);
 
 	m_PlayerPlane.move(movement * deltaTime.asSeconds());
 }
@@ -92,4 +96,8 @@ void Game::handlePlayerInput(sf::Keyboard::Key key, bool isPressed)
 		m_IsMovingLeft = isPressed;
 	else if (key == sf::Keyboard::D)
 		m_IsMovingRight = isPressed;
+	else if (key == sf::Keyboard::Left)
+		m_IsRotatingLeft = isPressed;
+	else if (key == sf::Keyboard::Right)
+		m_IsRotatingRight = isPressed;
 }
